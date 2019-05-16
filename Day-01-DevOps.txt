@@ -1,0 +1,56 @@
+Git   : is local repository 
+GitHub: is cloud repository 
+VCS : Version control system 
+DVCS: Distribuated version control system 
+=========================================
+Life cycle of git:
+
+un-tracked files/source code/documents -> git init -> Add files to Stage -> Commit to local repository (i.e. master) -> push to cloud(github)
+
+
+						git pull <-
+
+
+Git Terms:
+----------------
+Git	: is application to manage the version on local machine , is also known as git 		console or bash
+	https://git-scm.com/download/win
+
+GitHub	: cloud repository(over the internet)
+	-Create account here 
+
+Repository: is logical and physical name of project/app 
+
+Branch     : is logical group within repository 
+	   default branch is : master 
+		
+
+Git Commands:
+===============
+cd path(project path)
+git init   		--initialize the local repo
+git add -A		-add all files to git stage 
+git add .A	
+git add file.txt file2.java  --add selected files to git stage 
+git status   		--show status of git files 
+git reset file.txt	--unstage 
+git commit -m "message...."  -- commit to master / repository
+ ---Note : you will see error if you are trying to commit first time on a machine
+ git --config user.email "abcd@gmail.com"	
+ git --config user.name "name"
+
+git log 		--show commit history 
+git diff filename.ext   --show diff between previous and new version 
+
+
+----push an existing repository from the command line
+git remote add <aliasname> git@github.com:vimleshtech/git_session.git
+git push -u <aliasname> master
+
+
+
+
+
+
+
+
